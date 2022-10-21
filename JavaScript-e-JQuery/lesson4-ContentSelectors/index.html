@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Conteúdo</title>
+    <script>
+
+        function selectTag(){
+            var text = document.getElementsByTagName("h1")[0];
+            alert(text.innerHTML);
+        }
+
+        function selectClass(){
+            var text = document.getElementsByClassName("text")[2];
+            alert(text.innerHTML);
+        }
+
+        function selectId(){
+            var field = document.getElementById("field");
+            alert(field.value);
+            field.value="";
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="selectTag()">Selecione</button>
+        <h1>ProWay</h1>
+        <h1>Capgemini</h1>
+        <h1>Curso Java</h1>
+    <hr>
+
+    <button onclick="selectClass()">Selecione</button>
+        <h1 class="text">HTML</h1>
+        <h3 class="text">JavaScript</h3>
+        <p class="text">Java</p>
+    <hr>
+
+    <input type="text" name="" id="field"> <button onclick="selectId()">selecione</button>
+    <hr>
+</body>
+</html>
