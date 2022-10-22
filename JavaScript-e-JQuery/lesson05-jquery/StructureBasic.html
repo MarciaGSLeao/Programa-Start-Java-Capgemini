@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica</title>
+
+    <!--IMPORTAÇÃO DO ARQUIVO JQUERY PARA A PAGINA A QUAL SERÁ UTILIZADA A BIBLIOTECA-->
+    <script src="archive-jquery/jquery-3.6.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            let campo = $("input").val();
+            let titulo = $("#titulo").html();
+            let subtitulo = $(".subtitulo").html();
+
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+        });
+    </script>
+
+</head>
+<body>
+
+    <input type="text" value="Márcia">
+    <h1 id="titulo">Título</h1>
+    <h2 class="subtitulo">Subtítulo</h2>
+    
+</body>
+</html>
