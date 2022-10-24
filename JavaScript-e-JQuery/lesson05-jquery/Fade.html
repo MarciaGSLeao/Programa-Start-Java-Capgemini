@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir e Ocultar com Fade</title>
+    <script src="archive-jquery/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           // OCULTAR O H1 AO CARREGAR A PÁGINA
+            $("h1").css("display","none");
+
+           // EXIBIR 
+            $("#show").click(function(){
+                $("h1").fadeIn(2000);
+            })
+           // CARREGAR
+            $("#hide").click(function(){
+                $("h1").fadeOut(2000);
+            })
+
+           /*
+            TEMPO
+            1ª - Default: 0,4s
+            2ª - Slow: 0,6s
+            3ª - Valor em milissegundoa: 1000 equivale a 1s
+           */
+        })
+    </script>
+</head>
+<body>
+    <button id="show">Exibir</button>
+    <button id="hide">Ocultar</button>
+    <br><br>
+    <h1>Aprendendo Efeito Fade com JQuery</h1>
+</body>
+</html>
