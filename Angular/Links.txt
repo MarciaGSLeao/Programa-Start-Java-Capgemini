@@ -1,0 +1,11 @@
+Comando para instalar o Angular de forma global
+    npm i -g @angular/cli
+---------------------------------------------------------------------------------------------
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+---------------------------------------------------------------------------------------------
+
+Comando para criar um novo projeto Angular em um repositório
+    ng new <project-name>
+
+Comando para inicializar o projeto
+    np start
